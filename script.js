@@ -23,9 +23,17 @@ var specialSymbolsArray = ['!', '@', '#', '$','%', '^', '&', '*', '(', ')', '-',
 
 function generatePassword() {
 
+// the two 'if' statements below act as a 'gate', in order for the program to run, both 'if' statements must be 'true'
+
+
+
+
+// the first 'if' checks the length given to us by the user and makes sure it is above 8 and below 128. If this is not satisfied, the program breaks out and returns "YOU MUST SELECT AT LEAST ONE PARAMETER" once the generate password button is clicked.
 if ( charAmount >= 8 && charAmount <= 128 ) { 
+  // the second 'if' checks to make sure at least one of the respective prompts have been confirmed. If none of the prompts have been confirmed, the program breaks out and returns "YOU MUST ENTER A NUMBER BETWEEN 8 AND 128" once the password button is clicked.
   if ( upperCase || lowerCase || numbers || specialSymbols ) {
     
+    //the code block below creates an empty charArray array variable. Then, depending on which prompts have been confirmed, the respective arrays are then combined within charArray.
     charArray = [];
 
     if ( upperCase ) {
@@ -41,20 +49,18 @@ if ( charAmount >= 8 && charAmount <= 128 ) {
       charArray = charArray.concat(specialSymbolsArray);
     }
 
-  var characters = [];
+    // the code block below creates an empty 'characters' array, then, depending on how long the user wants the password to be and depending on how many prompts were confirmed, it will pick and then store randomly selected characters from the generated 'charArray' from above.
+
+    var characters = [];
     
     for (var i = 0; i < charAmount; i++) {
     characters += charArray[Math.floor(Math.random() * charArray.length)]
-    
   
     console.log(characters);
     
-    } 
-
-  return characters
+    } return characters
   
-} return "YOU MUST SELECT AT LEAST ONE PARAMETER"
-
+  } return "YOU MUST SELECT AT LEAST ONE PARAMETER"
 
 } return "YOU MUST ENTER A NUMBER BETWEEN 8 AND 128"
 
