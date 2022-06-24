@@ -60,7 +60,7 @@ if ( charAmount >= 8 && charAmount <= 128 ) {
     for (var i = 0; i < charAmount; i++) {
     characters += charArray[Math.floor(Math.random() * charArray.length)]
   
-    console.log(characters);
+    // console.log(characters);
     
     } return characters
   } return "YOU MUST SELECT AT LEAST ONE PARAMETER"
