@@ -9,6 +9,7 @@ function writePassword() {
   passwordText.value = password;
 
 }
+
 // getting the user's input, one prompt asking for desired password length, four confirms asking for desired character sets
 var charAmount = prompt("How many characters long would you like your password to be? Choose a number between 8 and 128.");
 var upperCase = confirm("Include Upper Case? Click OK to include, and Cancel to not include Upper Case Letters");
