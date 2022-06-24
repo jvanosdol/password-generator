@@ -21,19 +21,7 @@ var lowerCaseArray =['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
 var numbersArray= ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
 var specialSymbolsArray = ['!', '@', '#', '$','%', '^', '&', '*', '(', ')', '-', '_', '=', '+', '/', '~'];
 
-// function randomInt(charAmount) {
-//   return Math.floor(Math.random() * Math.floor(charAmount))
-// }
-
-
 function generatePassword() {
-  
-  // console.log("You clicked the button");
-  // console.log(charAmount);
-  // console.log(upperCase);
-  // console.log(lowerCase);
-  // console.log(numbers);
-  // console.log(specialSymbols);
 
 if ( charAmount >= 8 && charAmount <= 128 ) { 
   if ( upperCase || lowerCase || numbers || specialSymbols ) {
