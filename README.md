@@ -35,6 +35,17 @@ git clone https://github.com/jvanosdol/password-generator
 ## Screenshots
 
 
+- Empty
+
+  ![Empty](assets/empty-password-genereator.png)
+
+ 
+- Filled
+
+  ![My Image](assets/filled-password-generator.png)
+
+
+
 
 
 ## Credits
@@ -44,7 +55,7 @@ git clone https://github.com/jvanosdol/password-generator
 
 ## Features
 
-This website shows off CSS UI scrolling and dynamic styling that changes depending on the user's viewport.
+This web app shows off generating strings of a psecified length filled with randomly selected characters. The user is shown several prompts allowing the user to pick and choose how long they want the password to be, as well as the specific type of characters. 
 
 ## How to Contribute
 
