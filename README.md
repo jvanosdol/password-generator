@@ -37,7 +37,7 @@ git clone https://github.com/jvanosdol/password-generator
 
 - Empty
 
-  ![Empty](assets/empty-password-genereator.png)
+  ![Empty](assets/empty-password-generator.png)
 
  
 - Filled
